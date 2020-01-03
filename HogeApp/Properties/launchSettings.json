@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Hoge": {
+      "commandName": "Project"
+    },
+    "Hoge /Test": {
+      "commandName": "Project",
+      "commandLineArgs": "Test"
+    },
+    "HogeServerDaemon Test": {
+      "commandName": "Project",
+      "commandLineArgs": "HogeServerDaemon Test"
+    }
+  }
+}
