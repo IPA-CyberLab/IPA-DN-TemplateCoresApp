@@ -4,6 +4,9 @@
 // 
 // __PUBLICSTATEMENT__
 
+// Author: Daiyuu Nobori
+// プロセスのスタートアップコード (Main 関数)
+
 #pragma warning disable CA2235 // Mark all non-serializable fields
 
 using System;
@@ -38,8 +41,10 @@ namespace Contoso.Hoge.App
     {
         static int Main(string[] args)
         {
-            // CoresConfig.Database.DefaultIsolationLevel.TrySet(System.Data.IsolationLevel.Snapshot);
+            // CoresConfig の調整パラメータを設定する。
+            // CoresLib の何らかの機能を呼び出す前に設定する必要があるため、ここで設定をすることが唯一のチャンスである。
 
+            // CoresConfig.Database.DefaultIsolationLevel.TrySet(System.Data.IsolationLevel.Snapshot);
             // CoresConfig.ApplyHeavyLoadServerConfigAll();
 
             int ret = -1;

@@ -4,6 +4,9 @@
 // 
 // __PUBLICSTATEMENT__
 
+// Author: Daiyuu Nobori
+// DESCRIPTION HERE
+
 #pragma warning disable CA2235 // Mark all non-serializable fields
 
 using System;

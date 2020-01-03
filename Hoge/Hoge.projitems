@@ -12,6 +12,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ResourceRoot/**/*" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Basic\HogeServerApp.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Basic\_NewTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Dev\CoresDev.cs" />
   </ItemGroup>

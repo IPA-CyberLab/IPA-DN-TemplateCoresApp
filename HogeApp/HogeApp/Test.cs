@@ -4,6 +4,9 @@
 // 
 // __PUBLICSTATEMENT__
 
+// Author: Daiyuu Nobori
+// テストコード置き場
+
 #pragma warning disable CA2235 // Mark all non-serializable fields
 #pragma warning disable CS0162
 

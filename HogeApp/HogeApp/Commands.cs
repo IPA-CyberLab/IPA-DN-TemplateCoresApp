@@ -5,7 +5,7 @@
 // __PUBLICSTATEMENT__
 
 // Author: Daiyuu Nobori
-// ジャンク的な実験コマンドを実装したコード
+// アプリケーションで提供するコマンド集
 
 #pragma warning disable CA2235 // Mark all non-serializable fields
 
@@ -40,10 +40,10 @@ namespace Contoso.Hoge.App
     public static partial class Commands
     {
         [ConsoleCommand(
-            "JunkSample command",
-            "JunkSample [filename] /abc:def",
-            "JunkSample command")]
-        static int JunkSample(ConsoleService c, string cmdName, string str)
+            "HogeSample command",
+            "HogeSample [filename] /abc:def",
+            "HogeSample command")]
+        static int HogeSample(ConsoleService c, string cmdName, string str)
         {
             ConsoleParam[] args =
             {
@@ -53,11 +53,6 @@ namespace Contoso.Hoge.App
             ConsoleParamValueList vl = c.ParseCommandList(cmdName, str, args);
 
             return 0;
-        }
-
-        [ConsoleCommand]
-        static void JunkSample2()
-        {
         }
     }
 }
