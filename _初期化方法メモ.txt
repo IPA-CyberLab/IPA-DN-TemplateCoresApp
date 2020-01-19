@@ -49,6 +49,7 @@ c:\cygwin\bin\find.exe . -type f -name "*.cs" | grep -v /.git/ | grep -v /submod
 c:\cygwin\bin\find.exe . -type f -name "*.cs" | grep -v /.git/ | grep -v /submodules/ | xargs perl -pi -e 's/Hoge/AppName/g'
 c:\cygwin\bin\find.exe . -type f -name "*.cs" | grep -v /.git/ | grep -v /submodules/ | xargs perl -pi -e 's/Contoso/SE/g'
 
+c:\cygwin\bin\find.exe . -type f -name "launchSettings.json" | grep -v /.git/ | grep -v /submodules/ | xargs perl -pi -e 's/Hoge/AppName/g'
 
 ■ .bak ファイルを削除する
 c:\cygwin\bin\find.exe . -type f -name '*.bak' | grep -v /.git/ | grep -v /submodules/ | xargs rm
